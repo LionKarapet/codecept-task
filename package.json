@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "web": "npx codeceptjs run -c codecept.conf.js --steps --plugins allure",
-    "mobile": "npx codeceptjs run -c codecept.mobile.conf.js --steps --plugins allure"
+    "android": "CAPS='android' npx codeceptjs run -c codecept.mobile.conf.js --steps --plugins allure",
+    "ios": "CAPS='ios' npx codeceptjs run -c codecept.mobile.conf.js --steps --plugins allure"
   },
   "keywords": [],
   "author": "",

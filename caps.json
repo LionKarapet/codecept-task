@@ -1,0 +1,18 @@
+{
+    "android": {
+        "platformName": "ANDROID",
+        "realMobile": "true",
+        "device": "Samsung Galaxy S21",
+        "os_version": "11",
+        "browserName": "chrome",
+        "automationName": "UiAutomator2"
+    },
+    "ios":{
+        "platformName": "IOS",
+        "realMobile": "true",
+        "device": "iPhone 14 Pro",
+        "os_version": "16.2",
+        "browserName": "chrome",
+        "automationName": "XCUITest"
+    }
+}

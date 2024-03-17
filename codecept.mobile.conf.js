@@ -1,3 +1,5 @@
+const capabilities = require("./caps.json")[process.env.CAPS];
+
 /** @type {CodeceptJS.MainConfig} */
 exports.config = {
   output: './output',
@@ -15,18 +17,11 @@ exports.config = {
       port: 4444,
       user: 'lionkarabit_6WkjgD',
       key: 'Gp37BJUykg3U9BdYLefe',
-      platform: 'ANDROID',
-      desiredCapabilities: {
-        "platformName": "ANDROID",
-        "realMobile": "true",
-        "device": "Samsung Galaxy S21",
-        "os_version": "11",
-        "browserName": "chrome",
-        "automationName": "UiAutomator2"
-    },
+      platform: capabilities.platformName,
+      desiredCapabilities: capabilities,
     timeouts: {
       "script": 60000,
-    }
+     }
     }
   },
   bootstrap: null,
