@@ -6,7 +6,7 @@ class HomePage {
   articles = '.article-trending';
   accessiblityContainer='.bypass-block-links-container';
   accessibilityMostReadLink = 'Skip to Most Read';
-  logo = '.site-logo';
+  headerContainer = '.container--header';
 
   scrollToMostRead() {
     I.waitForVisible(this.newsContainer);
@@ -26,7 +26,7 @@ class HomePage {
   }
 
   open(){
-      I.amOnPage('https://aljazeera.com/');
+    I.amOnPage('https://aljazeera.com/');
   }
 
   clickOnMostReadLink(){
@@ -34,16 +34,8 @@ class HomePage {
     I.click(this.accessibilityMostReadLink);
   }
 
-  async clickOnLogo(){
-    // const { x, y, width, height } = await I.grabElementBoundingRect(this.logo);
-    // const xCoord = x - 100;
-    // const yCoord = y - 5;
-
-    // const { WebDriver } = codeceptjs.container;
-    // const actions = WebDriver.browser.actions({ async: true });
-    // await actions.move({ x: xCoord, y: yCoord }).click().perform();
-
-    I.click(this.logo);
+  async clickOnEmptyHeader(){
+    I.click(this.headerContainer);
   }
 
   openAccessiblityMenu(){

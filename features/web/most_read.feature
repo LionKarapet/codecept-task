@@ -10,7 +10,7 @@ Feature: Most Read Section
     Then I assert articles count in "Most Read" section is 10
 
   Scenario: accessibility url check
-    When I click on site logo
+    When I click on empty space in header
     When I open accessibility menu
     When I click on skip to most read
     Then I assert '#most-read-container' is added to the link

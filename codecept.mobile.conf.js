@@ -8,7 +8,7 @@ exports.config = {
     I: './steps_file.js',
   },
   gherkin: {
-    features: './features/most_read_mobile.feature',   // feature files location
+    features: './features/mobile/most_read_mobile.feature',   // feature files location
     steps: ['./steps/homePage_steps.js']  // step definitions location
   },
   helpers: {

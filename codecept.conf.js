@@ -14,7 +14,7 @@ exports.config = {
     I: './steps_file.js',
   },
   gherkin: {
-    features: './features/*.feature',   // feature files location
+    features: './features/web/*.feature',   // feature files location
     steps: ['./steps/homePage_steps.js','./steps/livePage_steps.js']  // step definitions location
   },
   helpers: {

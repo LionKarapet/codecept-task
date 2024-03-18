@@ -21,8 +21,8 @@ Then('I assert articles count in "Most Read" section is {int}', (num) => {
   homePage.checkArticlesCount(num);
 })
 
-When('I click on site logo',() =>{
-  homePage.clickOnLogo();
+When('I click on empty space in header',() =>{
+  homePage.clickOnEmptyHeader();
 })
 
 When('I open accessibility menu',() =>{
